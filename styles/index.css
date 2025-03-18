@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+.contenedor{
+    border: solid black;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.tarjeta{
+    border: solid black;
+    border-radius: 50px;
+    width: 70%;
+    height: 70%;
+    display: flex;
+}
+.tarjeta div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    
+}
+
+.tarjeta div:first-child{
+    flex: 0 0 25%;
+    background-color: #f0f0f0;
+    border-radius: 47px;
+    
+} 
+.tarjeta div:last-child{
+    flex: 0 0 75%; 
+  background-color: #d0d0d0; 
+  border-bottom-right-radius: 47px;
+  border-top-right-radius: 47px;
+}
