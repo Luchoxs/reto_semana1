@@ -1,23 +1,33 @@
 *{
     box-sizing: border-box;
 }
-
+body{
+    background-color: black;
+}
 .contenedor{
     border: solid black;
     height: 90vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
+    justify-content:center;
+    background: rgb(39,39,39);
+    background: linear-gradient(63deg, rgba(39,39,39,1) 0%, rgba(40,40,249,1) 35%, rgba(0,1,1,1) 100%);
     
 }
 
+.contenedor h1{
+    color: #d0d0d0;
+    font-family: "Permanent Marker", cursive;
+}
 .tarjeta{
     border: solid black;
     border-radius: 50px;
     width: 70%;
-    height: 70%;
+    
     display: flex;
+    background-color: #d0d0d0; 
+    text-align: center;
 }
 .tarjeta div{
     display: flex;
@@ -29,7 +39,11 @@
 
 .tarjeta div:first-child{
     flex: 0 0 25%;
-    background-color: #f0f0f0;
+    background-image: url('../assets/mascara_kitsune.png');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
     border-radius: 47px;
     
 } 
@@ -38,4 +52,19 @@
   background-color: #d0d0d0; 
   border-bottom-right-radius: 47px;
   border-top-right-radius: 47px;
+  display: flex;
+  flex-direction: column;
+  
+  font-family: "Jaini", system-ui;
+
 }
+@media (max-width: 768px) {
+    .tarjeta {
+      flex-direction: column;
+      
+    }
+    .tarjeta div:first-child {
+        background-position-y: 77%;
+      
+      } 
+  }
